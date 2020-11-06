@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+		.bar{
+			width: 17px;
+  height: 2px;
+  background-color: black;
+  margin: 3px 0;
+ margin-left: 8px;
+		}
+		
+.hero-image {
+ 
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color:#d0a058;;
+  text-align: center;
+  cursor: pointer;border-radius: 5px;
+  margin-top: 10px;
+}
+
+.hero-text button:hover {
+  background-color:#d0a058;;
+  color: black;
+}
+
+
+main {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  width: 100%; 
+  display: grid;
+  /* Define Auto Row size */
+  grid-auto-rows: 100px; 
+  /*Define our columns */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  grid-gap: 1em; height: auto;
+}
+
+article {
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+  height: min-content;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 32%;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: auto;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+@media only screen and (max-width:749px){
+    div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+		width: 50%;
+		margin-left: 25%;
+	  }
+	  
+
+	  
+main {
+ 
+  /*Define our columns */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  grid-gap: 5em; height: auto;
+}
+}
+
+form input[type=text] {
+  border: none;
+  
+  outline: none;
+  font-size: 15px;
+  padding:9px 110px 9px 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, button, h3, p { 
+            animation: fadeInAnimation ease 4s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+        } 
+        @keyframes fadeInAnimation { 
+            0% { 
+                opacity: 0; 
+            } 
+            100% { 
+                opacity: 1; 
+            } 
+        } 
+
+
+	.gallery { 
+            animation: fadeInAnimation ease 3s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+        } 
+        @keyframes fadeInAnimation { 
+            0% { 
+                opacity: 0; 
+            } 
+            100% { 
+                opacity: 1; 
+            } 
+		} 
+		.arun{
+			border: none;
+		   outline: 0;
+		   display: inline-block;
+		   padding: 10px 25px;
+		   color: black;
+		   background-color:white;
+		   text-align: center;
+		   cursor: pointer;border-radius: 5px;
+		   margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="page-wrapper">
+		<div class="nav-wrapper">
+		
+		 <nav class="navbar">
+		   <img src="img/2x/Asset 4@2x-100.jpg" alt="Company Logo">
+		   <div class="menu-toggle" id="mobile-menu">
+			 <span class="bar"></span>
+			 <span class="bar"></span>
+			 <span class="bar"></span>
+		   </div>
+		   <ul class="nav no-search">
+			 <li class="nav-item"><a href="#" class="fa fa-facebook"></a></li>
+			 <li class="nav-item"><a href="#" class="fa fa-twitter"></a></li>
+			 <li class="nav-item"><a href="#" class="fa fa-linkedin"></a></li>
+			 <li class="nav-item" style="margin-top: 12px;"><a href="#" >MENU</a></li>
+			 <li class="nav-item" style="margin-top: 12px;"><div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+				</li>
+			 
+			 
+		   </ul>
+		 </nav>
+		 </div>
+		 <section class="headline">
+
+			<div class="hero-image">
+				<div class="hero-text" >
+				
+				 
+		   <h1>Enterprise Marketing and Customer Experience</h1>
+		   <p>LEVERAGE DATA TO DRIVE PERSONALIZATION AT SCALE</p>
+		   <button> The Global Transition</button> <button style="margin-left: 10px;background-color: white;">Explore</button>
+		</div>
+	  </div>
+		   
+		 </section>
+		 <br><br>
+
+		 <section class="headline"  style="background-image: url('img/SVG/Asset\ 4.svg');">
+
+			<div class="hero-image">
+				<div  style="text-align: center;
+				position: absolute;
+				top: 50%;
+				left: 20%;
+				transform: translate(-24%, -48%);
+				color: white;" >
+				
+				 
+					<h2 class="no-margin no-border" style="margin-bottom: 5px;">THE DIGITAL SAVVY PHARMA MARKETER 2020</h2>
+					<h3>“Must have tool for every pharma marketer ”</h3>
+		   <button class="arun"> Download</button> 
+		</div>
+	  </div>
+		   
+		 </section>
+
+		 <br><br><br>
+		 
+		 <section id="left-flex" class="headline" style="background-image: url(img/SVG/Asset\ 14.svg);height: 120vh;">
+			 <h3 style="text-align: center;padding-top: 30px ;padding-bottom:20px;color: white;">INSPIRATIONAL TESTIMONY</h3>
+			<main style="position: relative;">
+				<article style="text-align: center;margin-bottom: 30px;"><img src="img/SVG/Asset 13.svg" style="text-align: center;height: 100px; width: 100px;" >
+				<div>As the President, he is 
+					responsible for new strategic 
+					initiatives.</div><br>
+				<b style="margin-top: 10px;">President</b></article>
+					<article style="text-align: center;"><img src="img/SVG/Asset 13.svg" style="text-align: center;height: 100px; width: 100px;" >
+						<div>As the President, he is 
+							responsible for new strategic 
+							initiatives.</div><br>
+						<b style="margin-top: 10px;">CEO</b></article>
+							<article style="text-align: center;"><img src="img/SVG/Asset 13.svg" style="text-align: center;height: 100px; width: 100px;" >
+								<div>As the President, he is 
+									responsible for new strategic 
+									initiatives.</div><br>
+								<b style="margin-top: 10px;">Executive VP</b></article>
+				
+			  </main>
+		</section> 
+		<br>
+		<br>
+		<!-- /end Left Aligned -->
+	<section class="manu"> 
+		<div class="gallery">
+			<a target="_blank" href="img/SVG/Asset 12.svg">
+			  <img src="img/SVG/Asset 12.svg" alt="Cinque Terre" width="600" height="400">
+			</a>
+			<div class="desc"><h2>Press Release</h2>
+				<p style="color: black;">Healthy Workplaces Conference & Awards 2019 - Indegene enters "Platinum League of Healthy Workplaces"
+	
+				</p></div>
+		  </div>
+		  
+		  <div class="gallery">
+			<a target="_blank" href="img/SVG/Asset 12.svg">
+			  <img src="img/SVG/Asset 12.svg" alt="Forest" width="600" height="400">
+			</a>
+			<div class="desc"><h2>Webinars</h2>
+			<p style="color: black;">Healthy Workplaces Conference & Awards 2019 - Indegene enters "Platinum League of Healthy Workplaces"
+
+			</p></div>
+		  </div>
+		  
+		  <div class="gallery">
+			<a target="_blank" href="img/SVG/Asset 12.svg">
+			  <img src="img/SVG/Asset 12.svg" alt="Northern Lights" width="600" height="400">
+			</a>
+			<div class="desc"><h2>Press Release</h2>
+				<p style="color: black;">Healthy Workplaces Conference & Awards 2019 - Indegene enters "Platinum League of Healthy Workplaces"
+	
+				</p></div>
+		  </div>
+		  
+		 
+	   </section> 
+<br>
+<br><br><br>
+
+	   <section class="headline"  style="background-color: black;">
+
+		<div class="hero-image">
+			<div class="hero-text" >
+			
+			 
+	   <h1>NEWSLETTER</h1>
+	   <form action="#" style="margin-top:10px;margin-bottom:30px">
+		<input type="text" placeholder="Enter Email Address" />
+		<button style="border-radius: 0px;">Subscribe</button>
+	  </form>
+	   <p>© 2019 Indegene. All rights reserved	|	Contact Us	|	Privacy Policy	|	CSR Policy</p>
+	</div>
+  </div>
+	   
+	 </section>
+
+	 <script>
+
+$('.other-links a').first().delay(100).animate({'opacity':'1'},600);
+$('.other-links a').last().delay(400).animate({'opacity':'1'},600);
+$('h1').delay(600).animate({'opacity':'1'},800);
+$('h2').delay(1000).animate({'opacity':'1'},800);
+$('button').delay(1300).animate({'marginTop':'+=10px','opacity':'1'},800);
+
+	 </script>
+</body>
+</html>
